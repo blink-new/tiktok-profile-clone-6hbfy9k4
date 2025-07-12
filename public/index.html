@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@milo_sounds - TikTok Desktop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="desktop-container">
+        <!-- Desktop Header -->
+        <header class="desktop-header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="tiktok-logo">TikTok</span>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search accounts and videos" class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+                <div class="header-actions">
+                    <button class="header-btn">Upload</button>
+                    <button class="header-btn">Messages</button>
+                    <div class="user-avatar">
+                        <span>MS</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Left Sidebar -->
+            <aside class="left-sidebar">
+                <nav class="sidebar-nav">
+                    <a href="#" class="nav-item active">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-text">For You</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">👥</span>
+                        <span class="nav-text">Following</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">🔥</span>
+                        <span class="nav-text">Trending</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">🎵</span>
+                        <span class="nav-text">Music</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">🎮</span>
+                        <span class="nav-text">Gaming</span>
+                    </a>
+                </nav>
+            </aside>
+
+            <!-- Profile Content -->
+            <div class="profile-content">
+                <!-- Profile Header -->
+                <div class="profile-header-section">
+                    <div class="profile-info">
+                        <div class="profile-avatar">
+                            <div class="avatar-circle">🥁</div>
+                        </div>
+                        <div class="profile-details">
+                            <h1 class="profile-username">@milo_sounds</h1>
+                            <h2 class="profile-display-name">Milo Dray | he/him | 17</h2>
+                            
+                            <div class="profile-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">543</span>
+                                    <span class="stat-label">Following</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">8.7K</span>
+                                    <span class="stat-label">Followers</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">89.2K</span>
+                                    <span class="stat-label">Likes</span>
+                                </div>
+                            </div>
+
+                            <div class="profile-bio">
+                                <p>Drums | Keys | Sound Experiments | Wildfire Veil</p>
+                                <p>🥁 Layered beats | 🎹 Synth jams | 🦉 Owl sketches & soundscapes</p>
+                                <p class="bio-quote">"Finding music in quiet moments."</p>
+                            </div>
+
+                            <div class="profile-links">
+                                <a href="#" class="profile-link">🎵 Band</a>
+                                <a href="#" class="profile-link">📺 YouTube</a>
+                                <a href="#" class="profile-link">📷 Instagram</a>
+                            </div>
+
+                            <div class="profile-actions">
+                                <button class="btn-follow">Follow</button>
+                                <button class="btn-message">Message</button>
+                                <button class="btn-more">⋯</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pinned Section -->
+                <section class="pinned-section">
+                    <h3 class="section-title">
+                        <span class="pin-icon">📌</span>
+                        Pinned
+                    </h3>
+                    <div class="pinned-videos">
+                        <div class="pinned-video" data-video="rainday">
+                            <div class="video-thumbnail">
+                                <div class="asmr-badge">ASMR</div>
+                                <div class="play-icon">▶️</div>
+                                <div class="gentle-overlay">🌧️</div>
+                                <div class="rain-effect"></div>
+                            </div>
+                            <div class="video-info">
+                                <p class="video-title">Rainy day rhythm: layering city sounds</p>
+                                <span class="view-count">1.2M views</span>
+                            </div>
+                        </div>
+                        <div class="pinned-video" data-video="drumbreak">
+                            <div class="video-thumbnail">
+                                <div class="calm-badge">Calm</div>
+                                <div class="play-icon">▶️</div>
+                                <div class="gentle-overlay">🥁</div>
+                            </div>
+                            <div class="video-info">
+                                <p class="video-title">Drum solo breakdown - Wildfire Veil</p>
+                                <span class="view-count">856K views</span>
+                            </div>
+                        </div>
+                        <div class="pinned-video" data-video="keyboard">
+                            <div class="video-thumbnail">
+                                <div class="play-icon">▶️</div>
+                                <div class="gentle-overlay">🐰</div>
+                            </div>
+                            <div class="video-info">
+                                <p class="video-title">Thistle hopping across keyboard</p>
+                                <span class="view-count">2.1M views</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tab Navigation -->
+                <div class="tab-navigation">
+                    <button class="tab active" data-tab="videos">
+                        <span class="tab-icon">🎬</span>
+                        Videos
+                    </button>
+                    <button class="tab" data-tab="liked">
+                        <span class="tab-icon">❤️</span>
+                        Liked
+                    </button>
+                </div>
+
+                <!-- Video Grid -->
+                <section class="video-grid-section">
+                    <div class="video-grid" id="videos-tab">
+                        <div class="video-card" data-video="practice">
+                            <div class="video-thumbnail">
+                                <div class="play-button">▶️</div>
+                                <div class="video-overlay">
+                                    <span class="whisper-text">Mistakes make the groove</span>
+                                </div>
+                                <div class="owl-sketch">🦉</div>
+                                <div class="rhythm-pattern">♪ ♫ ♪</div>
+                            </div>
+                            <div class="video-details">
+                                <span class="video-emoji">🥁</span>
+                                <h4 class="video-title">Practice session</h4>
+                                <p class="video-caption">Working out new beat</p>
+                                <div class="video-stats">❤️ 23K</div>
+                            </div>
+                        </div>
+
+                        <div class="video-card" data-video="synth">
+                            <div class="video-thumbnail">
+                                <div class="nature-badge">Nature</div>
+                                <div class="play-button">▶️</div>
+                                <div class="video-overlay">
+                                    <span class="whisper-text">Try this!</span>
+                                </div>
+                                <div class="gentle-overlay">🎹</div>
+                                <div class="rain-effect"></div>
+                            </div>
+                            <div class="video-details">
+                                <span class="video-emoji">🌧️</span>
+                                <h4 class="video-title">Synth experiment</h4>
+                                <p class="video-caption">Layering rain & birds</p>
+                                <div class="video-stats">❤️ 45K</div>
+                            </div>
+                        </div>
+
+                        <div class="video-card" data-video="apartment">
+                            <div class="video-thumbnail">
+                                <div class="play-button">▶️</div>
+                                <div class="video-overlay">
+                                    <span class="whisper-text">Cozy setup</span>
+                                </div>
+                                <div class="owl-sketch">🦉</div>
+                            </div>
+                            <div class="video-details">
+                                <span class="video-emoji">🏠</span>
+                                <h4 class="video-title">Mini apartment vlog</h4>
+                                <p class="video-caption">Setting up drums</p>
+                                <div class="video-stats">❤️ 18K</div>
+                            </div>
+                        </div>
+
+                        <div class="video-card" data-video="tutorial">
+                            <div class="video-thumbnail">
+                                <div class="tutorial-badge">Tutorial</div>
+                                <div class="play-button">▶️</div>
+                                <div class="video-overlay">
+                                    <span class="whisper-text">Don't overthink it</span>
+                                </div>
+                                <div class="gentle-overlay">🎵</div>
+                            </div>
+                            <div class="video-details">
+                                <span class="video-emoji">🎹</span>
+                                <h4 class="video-title">Keys + drums mix</h4>
+                                <p class="video-caption">Quick lesson</p>
+                                <div class="video-stats">❤️ 67K</div>
+                            </div>
+                        </div>
+
+                        <div class="video-card" data-video="owlsketch">
+                            <div class="video-thumbnail">
+                                <div class="play-button">▶️</div>
+                                <div class="video-overlay">
+                                    <span class="whisper-text">Time-lapse zen</span>
+                                </div>
+                                <div class="owl-sketch">🦉</div>
+                            </div>
+                            <div class="video-details">
+                                <span class="video-emoji">🦉</span>
+                                <h4 class="video-title">Owl sketch time-lapse</h4>
+                                <p class="video-caption">Ambient music bg</p>
+                                <div class="video-stats">❤️ 34K</div>
+                            </div>
+                        </div>
+
+                        <div class="video-card" data-video="rehearsal">
+                            <div class="video-thumbnail">
+                                <div class="band-badge">Band</div>
+                                <div class="play-button">▶️</div>
+                                <div class="video-overlay">
+                                    <span class="whisper-text">Steady heart</span>
+                                </div>
+                                <div class="rhythm-pattern">♩ ♪ ♫</div>
+                            </div>
+                            <div class="video-details">
+                                <span class="video-emoji">🎵</span>
+                                <h4 class="video-title">Rehearsal moment</h4>
+                                <p class="video-caption">Tapping out rhythm</p>
+                                <div class="video-stats">❤️ 89K</div>
+                            </div>
+                        </div>
+
+                        <div class="video-card" data-video="morning">
+                            <div class="video-thumbnail">
+                                <div class="play-button">▶️</div>
+                                <div class="gentle-overlay">🌅</div>
+                            </div>
+                            <div class="video-details">
+                                <span class="video-emoji">☕</span>
+                                <h4 class="video-title">Morning ritual</h4>
+                                <p class="video-caption">Tea & beats</p>
+                                <div class="video-stats">❤️ 12K</div>
+                            </div>
+                        </div>
+
+                        <div class="video-card" data-video="midnight">
+                            <div class="video-thumbnail">
+                                <div class="asmr-badge">ASMR</div>
+                                <div class="play-button">▶️</div>
+                                <div class="video-overlay">
+                                    <span class="whisper-text">Gentle sounds</span>
+                                </div>
+                                <div class="owl-sketch">🦉</div>
+                            </div>
+                            <div class="video-details">
+                                <span class="video-emoji">🌙</span>
+                                <h4 class="video-title">Midnight beats</h4>
+                                <p class="video-caption">Soft synth layers</p>
+                                <div class="video-stats">❤️ 156K</div>
+                            </div>
+                        </div>
+
+                        <div class="video-card" data-video="thistle">
+                            <div class="video-thumbnail">
+                                <div class="play-button">▶️</div>
+                                <div class="gentle-overlay">🐰</div>
+                            </div>
+                            <div class="video-details">
+                                <span class="video-emoji">🐰</span>
+                                <h4 class="video-title">Thistle cameo</h4>
+                                <p class="video-caption">Best audience ever</p>
+                                <div class="video-stats">❤️ 203K</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-grid hidden" id="liked-tab">
+                        <div class="empty-state">
+                            <div class="empty-icon">❤️</div>
+                            <h3>No liked videos yet</h3>
+                            <p>Videos you like will appear here</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer class="profile-footer">
+                    <div class="footer-tags">
+                        <a href="#" class="footer-tag">#WildfireVeil</a>
+                        <a href="#" class="footer-tag">Collabs/Lessons</a>
+                    </div>
+                    <p class="footer-contact">For collaborations and music lessons</p>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="video-modal hidden" id="videoModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-video">
+                <div class="video-player">
+                    <div class="player-placeholder">
+                        <div class="player-icon">🎵</div>
+                        <p class="player-text">Video would play here</p>
+                    </div>
+                </div>
+                <div class="video-sidebar">
+                    <div class="video-actions">
+                        <button class="action-btn like-btn">
+                            <span class="action-icon">❤️</span>
+                            <span class="action-count" id="likeCount">23K</span>
+                        </button>
+                        <button class="action-btn comment-btn">
+                            <span class="action-icon">💬</span>
+                            <span class="action-count">1.2K</span>
+                        </button>
+                        <button class="action-btn share-btn">
+                            <span class="action-icon">📤</span>
+                            <span class="action-count">Share</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="video-info-modal">
+                <h3 id="modalVideoTitle">Video Title</h3>
+                <p id="modalVideoCaption">Video description would go here</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
